@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Investment Research Agent
 
-## Getting Started
+An AI-powered investment research assistant that analyzes companies using multiple AI agents and provides insights, risks, recommendations, confidence score, and investment score.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- AI-based company research
+- Risk analysis using a dedicated AI agent
+- Investment decision generation
+- Confidence score prediction
+- Investment score rating
+- Multi-agent workflow using LangGraph
+- Interactive Next.js dashboard
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+User enters a company name.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The request goes through:
 
-## Learn More
+User
+↓
+Next.js Frontend
+↓
+API Route
+↓
+LangGraph Workflow
+↓
+Research Agent
+↓
+Risk Agent
+↓
+Decision Agent
+↓
+Final Investment Report
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## AI Agents
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Research Agent
+Analyzes company background, business model, and market presence.
 
-## Deploy on Vercel
+### 2. Risk Agent
+Identifies possible business, financial, market, and technology risks.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Decision Agent
+Combines research and risks to generate:
+- Recommendation (BUY/WATCH/PASS)
+- Confidence score
+- Investment score
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Tech Stack
+
+Frontend:
+- Next.js
+- React
+- Tailwind CSS
+
+Backend:
+- Next.js API Routes
+- LangGraph
+
+AI:
+- Groq LLM
+- LangChain
+
+Language:
+- TypeScript
+
+
+## Future Improvements
+
+- Real-time stock market data integration
+- Portfolio tracking
+- Historical analysis
+- More financial indicators
+- User authentication
+
+
+## Author
+
+Leena Mishra
