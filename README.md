@@ -219,6 +219,13 @@ All implementation decisions, testing, debugging, and final integration were rev
 
 ---
 
+
+## Live Demo
+
+🔗 https://investiq-7b316eg69-leenamishra2004-8715s-projects.vercel.app
+
+---
+
 ## Author
 
 **Leena Mishra**
