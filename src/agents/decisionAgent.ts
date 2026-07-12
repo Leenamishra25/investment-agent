@@ -7,7 +7,11 @@ const model = new ChatGroq({
 
 export async function decisionAgent(
   research: string,
-  risks: string
+  risks: string,
+  financial: string,
+    news: string
+
+
 ) {
 
   const response = await model.invoke(`
@@ -19,6 +23,12 @@ ${research}
 
 Risk Analysis:
 ${risks}
+
+Financial Analysis:
+${financial}
+
+News Analysis:
+${news}
 
 Based on this information decide:
 

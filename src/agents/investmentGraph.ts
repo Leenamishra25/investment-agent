@@ -21,6 +21,8 @@ console.log("DECISION OUTPUT:", decision);
     company: company,
 
     overview: result.research,
+    financial: result.financial,
+    news: result.news,
 
     strengths: [
       "Strong market presence",

@@ -1,83 +1,257 @@
-# AI Investment Research Agent
+# InvestIQ 🚀
 
-An AI-powered investment research assistant that analyzes companies using multiple AI agents and provides insights, risks, recommendations, confidence score, and investment score.
+## AI-Powered Multi-Agent Investment Research Platform
+
+## Overview
+
+InvestIQ is an AI-powered multi-agent investment research platform that analyzes companies and generates intelligent investment recommendations. The system uses multiple AI agents to perform company research, risk assessment, financial analysis, news analysis, and final decision-making. Based on the combined analysis, the platform provides a BUY, WATCH, or PASS recommendation along with a confidence score, investment score, and reasoning.
+
+---
 
 ## Features
 
-- AI-based company research
-- Risk analysis using a dedicated AI agent
-- Investment decision generation
-- Confidence score prediction
-- Investment score rating
-- Multi-agent workflow using LangGraph
-- Interactive Next.js dashboard
+* Multi-Agent AI workflow using LangGraph
+* Company Research Agent
+* Risk Analysis Agent
+* Financial Analysis Agent
+* News Analysis Agent
+* AI Decision Agent
+* BUY / WATCH / PASS recommendation
+* Confidence Score
+* Investment Score
+* Interactive dashboard built with Next.js
+* Responsive user interface using Tailwind CSS
 
-## How It Works
+---
 
-User enters a company name.
+## How to Run
 
-The request goes through:
+### Prerequisites
 
-User
-↓
-Next.js Frontend
-↓
-API Route
-↓
-LangGraph Workflow
-↓
-Research Agent
-↓
-Risk Agent
-↓
-Decision Agent
-↓
-Final Investment Report
+* Node.js (v18 or later)
+* npm
+* Groq API Key
+
+### Installation
+
+```bash
+git clone <repository-url>
+
+cd investment-agent
+
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file and add:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+### Run the project
+
+```bash
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
+
+---
+
+## Project Structure
+
+```
+src/
+│
+├── app/
+│   ├── api/
+│   └── page.tsx
+│
+├── agents/
+│   ├── researchAgent.ts
+│   ├── riskAgent.ts
+│   ├── financialAgent.ts
+│   ├── newsAgent.ts
+│   ├── decisionAgent.ts
+│   ├── investmentWorkflow.ts
+│   └── investmentGraph.ts
+```
+
+---
+
+## How it Works
+
+1. User enters a company name.
+2. The request is sent to the backend API.
+3. LangGraph starts the multi-agent workflow.
+4. Research Agent analyzes the company.
+5. Risk Agent identifies potential risks.
+6. Financial Agent evaluates the company's financial health.
+7. News Agent analyzes recent market sentiment.
+8. Decision Agent combines all outputs and generates:
+
+   * Recommendation (BUY / WATCH / PASS)
+   * Confidence Score
+   * Investment Score
+   * Final Reasoning
+
+---
+
+## System Architecture
+
+```
+                User
+                  │
+                  ▼
+        Next.js Frontend
+                  │
+                  ▼
+           API Route
+                  │
+                  ▼
+      LangGraph Workflow
+                  │
+ ┌──────────────────────────────────┐
+ │                                  │
+ ▼                                  ▼
+Research Agent               Risk Agent
+        │                          │
+        ▼                          ▼
+ Financial Agent          News Agent
+            │                  │
+            └──────────┬───────┘
+                       ▼
+               Decision Agent
+                       │
+                       ▼
+         Final Investment Report
+```
+
+---
+
+## Key Decisions & Trade-offs
+
+### Decisions
+
+* Used LangGraph to orchestrate multiple AI agents in a structured workflow.
+* Selected Groq LLaMA for fast inference and efficient response generation.
+* Built the frontend using Next.js and Tailwind CSS for a responsive user experience.
+* Divided responsibilities among specialized AI agents instead of using a single prompt.
+
+### Trade-offs
+
+* Live stock market APIs were not integrated due to project time constraints.
+* Financial analysis is generated using AI rather than real-time financial statements.
+* News analysis is AI-generated instead of using live news APIs.
+
+---
+
+## Example Runs
+
+### Example 1
+
+**Company:** Tesla
+
+* Recommendation: BUY
+* Confidence: 80%
+* Investment Score: 8/10
+
+---
+
+### Example 2
+
+**Company:** Apple
+
+* Recommendation: WATCH
+* Confidence: *(Update after testing)*
+* Investment Score: *(Update after testing)*
+
+---
+
+### Example 3
+
+**Company:** Microsoft
+
+* Recommendation: *(Update after testing)*
+* Confidence: *(Update after testing)*
+* Investment Score: *(Update after testing)*
+
+---
+
+## Technologies Used
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Next.js API Routes
+* LangChain.js
+* LangGraph.js
+
+### AI
+
+* Groq LLaMA
+
+---
 
 
-## AI Agents
 
-### 1. Research Agent
-Analyzes company background, business model, and market presence.
+## Example Runs
 
-### 2. Risk Agent
-Identifies possible business, financial, market, and technology risks.
+### Tesla
 
-### 3. Decision Agent
-Combines research and risks to generate:
-- Recommendation (BUY/WATCH/PASS)
-- Confidence score
-- Investment score
+![Tesla Result](screenshots/tesla.png)
 
 
-## Tech Stack
+### InsideIIM
 
-Frontend:
-- Next.js
-- React
-- Tailwind CSS
-
-Backend:
-- Next.js API Routes
-- LangGraph
-
-AI:
-- Groq LLM
-- LangChain
-
-Language:
-- TypeScript
-
+![InsideIIM Result](screenshots/insideiim.png)
 
 ## Future Improvements
 
-- Real-time stock market data integration
-- Portfolio tracking
-- Historical analysis
-- More financial indicators
-- User authentication
+* Integration with live stock market APIs
+* Real-time financial data
+* Live news API integration
+* Interactive investment charts
+* Portfolio management
+* User authentication
+* Historical stock analysis
+* Export reports as PDF
 
+---
+
+## AI Development Process (Bonus)
+
+AI assistance was used throughout the development process to accelerate implementation, debugging, and documentation.
+
+AI was used for:
+
+* Designing the multi-agent architecture
+* Debugging LangGraph workflow issues
+* Improving the user interface
+* API integration
+* TypeScript debugging
+* Documentation and README preparation
+
+All implementation decisions, testing, debugging, and final integration were reviewed and completed manually.
+
+---
 
 ## Author
 
-Leena Mishra
+**Leena Mishra**
+
+B.Tech – Computer Science and Engineering
+
+Lovely Professional University
