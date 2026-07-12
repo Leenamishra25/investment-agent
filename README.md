@@ -202,20 +202,32 @@ Research Agent               Risk Agent
 
 ---
 
-## AI Development Process (Bonus)
 
-AI assistance was used throughout the development process to accelerate implementation, debugging, and documentation.
+## AI Development Notes 
 
-AI was used for:
+During the development of InvestIQ, AI tools were used as a development assistant for brainstorming, debugging, and improving implementation quality.
 
-* Designing the multi-agent architecture
-* Debugging LangGraph workflow issues
-* Improving the user interface
-* API integration
-* TypeScript debugging
-* Documentation and README preparation
+Key areas where AI assistance was used:
 
-All implementation decisions, testing, debugging, and final integration were reviewed and completed manually.
+1. Architecture Planning
+- Discussed approaches for designing a multi-agent investment research workflow.
+- Evaluated the use of LangGraph for agent orchestration.
+
+2. Implementation Support
+- Used AI assistance for understanding LangChain/LangGraph patterns.
+- Took guidance while structuring research, risk, financial, news, and decision agents.
+
+3. Debugging
+- Used AI assistance to identify and resolve issues related to:
+  - API integration
+  - Environment variables
+  - TypeScript errors
+  - Deployment configuration
+
+4. Documentation
+- Used AI assistance for improving README structure and explaining system architecture.
+
+All generated suggestions were reviewed, modified, integrated, and tested manually before being included in the final project.
 
 ---
 
