@@ -180,14 +180,14 @@ Research Agent               Risk Agent
 ## Example Runs
 ---
 
-### Tesla
-
-![Tesla Result](screenshots/Tesla.png)
-
-
 ### InsideIIM
 
 ![InsideIIM Result](screenshots/InsideIIM.png)
+
+
+### Tesla
+
+![Tesla Result](screenshots/Tesla.png)
 
 ## Future Improvements
 
