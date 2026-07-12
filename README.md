@@ -152,37 +152,7 @@ Research Agent               Risk Agent
 
 ---
 
-## Example Runs
 
-### Example 1
-
-**Company:** Tesla
-
-* Recommendation: BUY
-* Confidence: 80%
-* Investment Score: 8/10
-
----
-
-### Example 2
-
-**Company:** Apple
-
-* Recommendation: WATCH
-* Confidence: *(Update after testing)*
-* Investment Score: *(Update after testing)*
-
----
-
-### Example 3
-
-**Company:** Microsoft
-
-* Recommendation: *(Update after testing)*
-* Confidence: *(Update after testing)*
-* Investment Score: *(Update after testing)*
-
----
 
 ## Technologies Used
 
@@ -208,15 +178,16 @@ Research Agent               Risk Agent
 
 
 ## Example Runs
+---
 
 ### Tesla
 
-![Tesla Result](screenshots/tesla.png)
+![Tesla Result](screenshots/Tesla.png)
 
 
 ### InsideIIM
 
-![InsideIIM Result](screenshots/insideiim.png)
+![InsideIIM Result](screenshots/InsideIIM.png)
 
 ## Future Improvements
 
